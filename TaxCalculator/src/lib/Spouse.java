@@ -19,3 +19,4 @@ public class Spouse {
 }
 
 // menambhakan class Spouse
+//merge branch refactoring ke master
