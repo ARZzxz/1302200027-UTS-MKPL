@@ -1,0 +1,40 @@
+hal yang di refactoring pada source code ini yaitu
+
+pada class Employee : 
+
+1. Data Class
+Kode tersebut memiliki beberapa atribut yang hanya berfungsi sebagai data storage dan tidak memiliki behavior yang terkait. 
+Oleh karena itu, atribut-atribut tersebut dapat dijadikan satu objek baru yang mewakili sebuah entitas. 
+Contohnya, atribut childNames dan childIdNumbers dapat dibuat sebagai atribut pada objek Child.
+
+2. Long Parameter List
+Beberapa method di dalam kode tersebut memiliki parameter yang cukup banyak, sehingga dapat menyulitkan dalam penggunaannya. 
+Perbaikan yang dapat dilakukan adalah dengan mengelompokkan beberapa parameter menjadi sebuah objek, 
+sehingga parameter yang diperlukan menjadi lebih sedikit dan lebih mudah dimengerti.
+
+3. Comments
+Pada kode tersebut, terdapat beberapa komentar yang menjelaskan fungsi dari sebuah method. 
+Sebaiknya, nama method tersebut dapat diubah menjadi nama yang lebih deskriptif sehingga tidak perlu adanya komentar.
+
+4. Feature Envy
+Terdapat method getAnnualIncomeTax() yang memiliki dependensi pada atribut dari objek TaxFunction. 
+Sebaiknya, method tersebut dipindahkan ke dalam objek TaxFunction agar lebih sesuai dengan prinsip OOP.\
+
+5. menambahkan class Spouse dan Child 
+untuk mendefinisikan variabel yang ada di clas Spouse dan Child
+
+pada class Tax Function :
+
+1. Menghilangkan komentar yang tidak perlu. 
+Komentar tersebut sudah jelas terlihat dari nama fungsi, sehingga tidak perlu dituliskan kembali.
+2. Menghilangkan print statement pada kondisi numberOfMonthWorking > 12. 
+
+
+Print statement tersebut tidak akan memberikan nilai apapun dan akan membuat debugging menjadi lebih sulit jika diperlukan.
+
+3. Mengubah nilai parameter numberOfChildren menjadi konstan, 
+karena nilai parameter tersebut telah diatur agar tidak melebihi 3.
+
+4. Mengubah tipe data dari variabel tax dari int menjadi double untuk meminimalkan kesalahan pembulatan.
+5. Mengubah variabel tax menjadi return statement, untuk mempersingkat kode dan memudahkan pemahaman.
+6. Mengganti nama variabel isMarried menjadi married, karena nama tersebut sudah cukup jelas dan tidak perlu menambahkan kata "is".
