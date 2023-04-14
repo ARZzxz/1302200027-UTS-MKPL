@@ -17,3 +17,5 @@ public class Child {
         return idNumber;
     }
 }
+
+//Menambahkan class Child

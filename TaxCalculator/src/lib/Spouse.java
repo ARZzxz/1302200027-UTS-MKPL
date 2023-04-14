@@ -17,3 +17,5 @@ public class Spouse {
         return idNumber;
     }
 }
+
+// menambhakan class Spouse
